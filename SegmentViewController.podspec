@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SegmentViewController'
   s.version          = '0.1.0'
-  s.swift_version    = '4.0'
+  s.swift_version    = '5.0'
   s.summary          = 'A powerful paging view controller with indicator bar for iOS.'
 
 # This description is used to generate tags and improve search results.

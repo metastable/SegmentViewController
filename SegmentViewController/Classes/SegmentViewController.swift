@@ -20,7 +20,7 @@ public enum TabAnimationType {
 
 
 
-@objcMembers open class SegmentViewController: UIViewController, UIPageViewControllerDelegate,UIPageViewControllerDataSource,UIScrollViewDelegate {
+open class SegmentViewController: UIViewController, UIPageViewControllerDelegate,UIPageViewControllerDataSource,UIScrollViewDelegate {
     
     public var delegate: SegmentViewControllerDelegate!
     public var dataSource: SegmentViewControllerDataSource!
@@ -325,9 +325,9 @@ public enum TabAnimationType {
         
         
         assert(index <= self.contentViewControllers.count-1, "Default display page index is bigger than amount of  view controller")
-        var direction = UIPageViewControllerNavigationDirection.reverse
+        var direction = UIPageViewController.NavigationDirection.reverse
         if index > currentPageIndex {
-            direction = UIPageViewControllerNavigationDirection.forward
+            direction = UIPageViewController.NavigationDirection.forward
         }
         
         
